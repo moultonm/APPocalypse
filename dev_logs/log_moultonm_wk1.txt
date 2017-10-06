@@ -1,1 +1,8 @@
-the document you are currently reading is my dev log for week 1. it is full of all the great things i've done.
+Dev Log 1: Week of Sept. 19, 2017
+
+Activities:
+- Downloaded & installed Android Studio
+- Met and discussed project schedule with group
+- Researched how to create and test Android applications
+
+Time Taken: 3 hrs
