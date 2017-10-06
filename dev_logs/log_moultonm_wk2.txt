@@ -1,1 +1,7 @@
-week of sept 26
+Dev Log 2: Week of Sept. 26, 2017
+
+Activities:
+- Created prototype chat application using webviews to connect to a server over the internet
+- Met and discussed work distribution with group
+
+Time Taken: 3 hrs
