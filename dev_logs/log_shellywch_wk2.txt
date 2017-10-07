@@ -1,0 +1,9 @@
+Dev Log 2: Sept 25 - 29
+
+Activities:
+
+- Look at Web Javascript prototype of a chat utility
+- Distribute work and research focus among group memebers
+- Research into how to use Adapters and different buttons and widgets in Andriod
+
+Time: 2 hrs

@@ -1,0 +1,9 @@
+Dev Log 2: Oct 2 - 6
+
+Activities:
+
+- Work on how to update and add elements to ListView
+- Setting up buttons and edit text for user input output
+- Looking into Socket.io for Java for communications with server
+
+Time: 2 hrs
