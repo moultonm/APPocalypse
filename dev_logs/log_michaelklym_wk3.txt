@@ -1,0 +1,7 @@
+Dev Log 2: Oct 2
+
+Activities:
+
+- Created basic user interface with different states
+
+Time: 2 hrs
