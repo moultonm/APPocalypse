@@ -1,0 +1,9 @@
+Dev Log 4: Week of Oct. 10, 2017
+
+Activities:
+- Finished researching Socket.io package and succesfully implemented a chatroom 
+  that can send and receive messages through the server to other users
+- Met with group to discuss next objectives, need to start thinking about deliverable 2 and documenting our work well
+- Next steps are cleaning up chat functionality, followed by adding different chat rooms
+
+Time Taken: 3 hrs
