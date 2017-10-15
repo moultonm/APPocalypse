@@ -1,8 +1,0 @@
-Dev log 1: Sept 18.
-
-Activities:
-- met with group members and discussed project details
-- Set up git repository and gitHub settings
-- started learning android studio
-
-Time:  2 hours

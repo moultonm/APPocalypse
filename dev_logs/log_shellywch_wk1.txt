@@ -1,9 +1,0 @@
-Dev log 1: Sept 18 - 22.
-
-Activities:
-- Download and setup Andriod Studio
-- Set up git repository and gitHub settings
-- Discuss possible design options and technologies used for project
-- Research into how to use Andriod Studio 
-
-Time:  2 hours

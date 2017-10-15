@@ -1,7 +1,0 @@
-Dev Log 3: Week of Oct. 3, 2017
-
-Activities:
-- Met with group and researched how to use ListViews, created basic app that updates a chat log with messages the user inputs
-- Made progress on learning how to implement the Socket.io package for the Android client to easily connect to our webserver running the same package on Node.js
-
-Time Taken: 2 hrs
