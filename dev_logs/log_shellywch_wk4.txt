@@ -1,0 +1,9 @@
+Dev Log 4: Oct 9 - 13
+
+Activities:
+
+- Worked on implementing socket.io
+- Set up chat room to be able to send and revieve message from server
+- communication from server
+
+Time: 2 hrs
