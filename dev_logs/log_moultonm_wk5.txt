@@ -1,0 +1,8 @@
+Dev Log 5: Week of Oct. 17, 2017
+
+Activities:
+- Cleaned up some of the networking code, and moved the chat functionality to a different Activity
+- Added a "login" Activity so the first thing that users see is a page allowing them to enter a name, which becomes their
+  username and then displays the chatroom page
+
+Time Taken: 2 hrs
