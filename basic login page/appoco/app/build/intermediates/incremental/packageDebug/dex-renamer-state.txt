@@ -1,0 +1,7 @@
+#Tue Oct 24 22:58:56 EDT 2017
+base.0=C\:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0be3c1566322389b42beef4795f667b32c300509
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_12a1fc01748ee57987dc73a11fc08e257c5716cd\\classes.dex
+base.1=C\:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_12a1fc01748ee57987dc73a11fc08e257c5716cd
+file.0=C\:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0be3c1566322389b42beef4795f667b32c300509\\classes.dex

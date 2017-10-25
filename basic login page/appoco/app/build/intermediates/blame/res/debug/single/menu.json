@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_join.xml",
+        "source": "C:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\src\\main\\res\\menu\\menu_join.xml"
+    },
+    {
+        "merged": "C:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
+        "source": "C:\\Users\\klym\\AndroidStudioProjects\\appoco\\app\\src\\main\\res\\menu\\menu_login.xml"
+    }
+]

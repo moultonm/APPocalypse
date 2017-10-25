@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\175c578cb68e0c8dfff12785346a3385af4a1e0d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a7b82a92dee89b956480a2b9a442b9b4790e1703\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\60c9c72021182795f70dce83e6551e74cdd68089\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b4ccd476cc1c08f25f8e7c247001b9d668e893e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\32ec4757f01aca448695dcf4d475e588f0c7e52e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b3483d2faacf2981561da85de06e4826463f4d26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\1dbd802d591a71f59ffcdd6a9c0dd83bbea4accc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d136571e10db86c2eabac072b262b01c6693f15d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\6c6098905f42bb7a737286f6f1d66f446f6eb8a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13e45b2496466ed2af8814dfc59aef8c6f31d7ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e24e9afc57cf563b7b7d7d36423ad172fe7c02d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\42fac067573e567d47888e3d80e41bf92b8299df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7ba269ca7d1022e1dbcaeca26611a20921922b09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0be3c1566322389b42beef4795f667b32c300509\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\cd93ae17312e410b52545d1a270f91ea15885c22\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4e50c235d67242c3574fe1dde5602c2fe3a50eac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_0ea1e3c8ebc22b869d32fadac4e9ee53f3bb2f8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\60ef257f4fca97f63c5fc4cdd74f58dd85929c48\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7b32e6ab4a6526124839f4c0949c8d24930cc3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\762b59044a034a99f24bdb14210d3444a5592e35\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75e104f14d958d0ff8e1ae2d5c2e25aba2f6d3e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\37650e9d4bc11fd179e44e1c6bcda345c8a4c1e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f830b243e05a6509c5ed74fbfc44ea9e0e29ba09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\.android\build-cache\de7bf5b99326cd62640ae2dd79cc26304898cbfa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2797d07835a96098fc37c70282cd9ccc1471656\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="84ae9b879beade32811f85ea66a28dafdd258310">
+        <dex dex="C:\Users\klym\AndroidStudioProjects\appoco\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_12a1fc01748ee57987dc73a11fc08e257c5716cd\classes.dex" />
+    </item>
+
+</items>

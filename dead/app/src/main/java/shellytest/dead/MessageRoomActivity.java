@@ -21,6 +21,7 @@ import java.util.ArrayList;
 
 
 public class MessageRoomActivity extends AppCompatActivity {
+    ListView listView;
     ArrayList<String> messageList = new ArrayList<String>();
     ArrayAdapter<String> adapter;
     Socket mSocket;
@@ -55,21 +56,16 @@ public class MessageRoomActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-
     public void sendMessage(View v){
         EditText message = (EditText) findViewById(R.id.messageBox);
         System.out.println("HELO");
         messageList.add(message.getText().toString());
-        if (messageList.size() >6) {
-            messageList.remove(0);
-        }
 
         adapter.notifyDataSetChanged();
 
         mSocket.emit("message", message.getText().toString());
         mSocket.emit("newRequest", message.getText().toString());
         message.setText("");
-
         //mSocket.on("")
 
     }

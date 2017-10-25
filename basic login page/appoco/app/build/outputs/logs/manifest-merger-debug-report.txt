@@ -1,0 +1,123 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:5:5-34:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\klym\.android\build-cache\6034ddf90608d94f1b6d4419dc3c6bef2fa3ff9a\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\klym\.android\build-cache\37650e9d4bc11fd179e44e1c6bcda345c8a4c1e7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\762b59044a034a99f24bdb14210d3444a5592e35\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\42fac067573e567d47888e3d80e41bf92b8299df\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\klym\.android\build-cache\32ec4757f01aca448695dcf4d475e588f0c7e52e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\klym\.android\build-cache\175c578cb68e0c8dfff12785346a3385af4a1e0d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60ef257f4fca97f63c5fc4cdd74f58dd85929c48\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\klym\.android\build-cache\de7bf5b99326cd62640ae2dd79cc26304898cbfa\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cd93ae17312e410b52545d1a270f91ea15885c22\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60c9c72021182795f70dce83e6551e74cdd68089\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\6c6098905f42bb7a737286f6f1d66f446f6eb8a2\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:11:9-40
+activity#approp.appoco.login
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:13:13-34
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:19:27-74
+activity#approp.appoco.joinOrHost
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:22:9-25:59
+	android:label
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:24:13-64
+	android:theme
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:23:13-39
+activity#approp.appoco.join
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:26:9-29:59
+	android:label
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:28:13-56
+	android:theme
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:27:13-33
+activity#approp.appoco.host
+ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:30:9-33:68
+	android:label
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:32:13-56
+	android:theme
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:33:13-56
+	android:name
+		ADDED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml:31:13-33
+uses-sdk
+INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\klym\.android\build-cache\6034ddf90608d94f1b6d4419dc3c6bef2fa3ff9a\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\klym\.android\build-cache\37650e9d4bc11fd179e44e1c6bcda345c8a4c1e7\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\762b59044a034a99f24bdb14210d3444a5592e35\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\42fac067573e567d47888e3d80e41bf92b8299df\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\klym\.android\build-cache\1dbd802d591a71f59ffcdd6a9c0dd83bbea4accc\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\klym\.android\build-cache\32ec4757f01aca448695dcf4d475e588f0c7e52e\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\klym\.android\build-cache\175c578cb68e0c8dfff12785346a3385af4a1e0d\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60ef257f4fca97f63c5fc4cdd74f58dd85929c48\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\klym\.android\build-cache\de7bf5b99326cd62640ae2dd79cc26304898cbfa\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cd93ae17312e410b52545d1a270f91ea15885c22\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60c9c72021182795f70dce83e6551e74cdd68089\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\6c6098905f42bb7a737286f6f1d66f446f6eb8a2\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\klym\AndroidStudioProjects\appoco\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\klym\.android\build-cache\37650e9d4bc11fd179e44e1c6bcda345c8a4c1e7\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\762b59044a034a99f24bdb14210d3444a5592e35\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\klym\.android\build-cache\42fac067573e567d47888e3d80e41bf92b8299df\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\klym\.android\build-cache\1dbd802d591a71f59ffcdd6a9c0dd83bbea4accc\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\klym\.android\build-cache\32ec4757f01aca448695dcf4d475e588f0c7e52e\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\klym\.android\build-cache\175c578cb68e0c8dfff12785346a3385af4a1e0d\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60ef257f4fca97f63c5fc4cdd74f58dd85929c48\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\klym\.android\build-cache\de7bf5b99326cd62640ae2dd79cc26304898cbfa\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cd93ae17312e410b52545d1a270f91ea15885c22\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\klym\.android\build-cache\60c9c72021182795f70dce83e6551e74cdd68089\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\klym\.android\build-cache\6c6098905f42bb7a737286f6f1d66f446f6eb8a2\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\klym\.android\build-cache\cafc1112c7f1f3f3b567708148e67ffafaf5023d\output\AndroidManifest.xml:26:9-47
