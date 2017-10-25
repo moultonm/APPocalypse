@@ -19,6 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".joinOrHost"
+            android:label="@string/title_activity_join_or_host"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".join"
+            android:label="@string/title_activity_join"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".host"
+            android:label="@string/title_activity_host"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
