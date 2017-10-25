@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\klym\AndroidStudioProjects\dead\app\app.iml" filepath="C:\Users\klym\AndroidStudioProjects\dead\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dead.iml" filepath="$PROJECT_DIR$/dead.iml" />
-      <module fileurl="file://C:\Users\klym\AndroidStudioProjects\dead\dead.iml" filepath="C:\Users\klym\AndroidStudioProjects\dead\dead.iml" />
     </modules>
   </component>
 </project>
