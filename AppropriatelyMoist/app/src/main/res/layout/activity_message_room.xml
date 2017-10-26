@@ -40,4 +40,5 @@
         app:layout_constraintLeft_toRightOf="@+id/userName"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listview" />
+
 </android.support.constraint.ConstraintLayout>

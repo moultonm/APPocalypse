@@ -26,7 +26,8 @@
             android:label="@string/title_activity_join_host"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".JoinActivity" />
-        <activity android:name=".HostActivity"></activity>
+        <activity android:name=".HostActivity" />
+        <activity android:name=".MessageRoomActivity"></activity>
     </application>
 
 </manifest>
