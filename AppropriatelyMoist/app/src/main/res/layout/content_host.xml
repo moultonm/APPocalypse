@@ -44,6 +44,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="42dp"
         android:background="@android:color/holo_red_dark"
+        android:onClick="openChatRoom"
         android:text="make room"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"

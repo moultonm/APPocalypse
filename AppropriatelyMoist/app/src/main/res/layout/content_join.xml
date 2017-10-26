@@ -23,4 +23,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/defaultBtn"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openChatRoom"
+        android:text="Default Room"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="85dp" />
 </android.support.constraint.ConstraintLayout>

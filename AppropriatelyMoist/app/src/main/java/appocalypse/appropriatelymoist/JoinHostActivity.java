@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class JoinHostActivity extends AppCompatActivity {
 
+    private String userName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +21,7 @@ public class JoinHostActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TextView nameField = (TextView) findViewById(R.id.userName);
-        String userName = getIntent().getStringExtra("userName");
+        userName = getIntent().getStringExtra("userName");
         nameField.setText(userName);
 
 
@@ -28,11 +30,13 @@ public class JoinHostActivity extends AppCompatActivity {
 
     public void join(View view){
         Intent startNewActivity = new Intent(this, JoinActivity.class);
+        startNewActivity.putExtra("userName", userName);
         startActivity(startNewActivity);
     }
 
     public void host(View view){
         Intent startNewActivity = new Intent(this, HostActivity.class);
+        startNewActivity.putExtra("userName", userName);
         startActivity(startNewActivity);
     }
 }
