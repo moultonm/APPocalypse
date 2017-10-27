@@ -1,0 +1,8 @@
+Dev Log 5: Oct 16 - 20
+
+Activities:
+
+- Worked on imporving UI
+-Seperate activities into join or host
+
+Time: 2 hrs

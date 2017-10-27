@@ -1,0 +1,10 @@
+Dev Log 6: Oct 23 - 27
+
+Activities:
+
+- Worked on imporving UI
+- Implemented room hosting feature
+- Implemented different chat room feature
+- Worked on documentations for deliverable 2
+
+Time: 9 hrs
