@@ -1,0 +1,5 @@
+Dev Log 3: Oct. 3, 2017
+
+Researched different apis for chat application to explore
+possibilities. Downloaded node.js and express to create a server that recieves messages
+via sockets

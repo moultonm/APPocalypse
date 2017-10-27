@@ -1,0 +1,3 @@
+Dev Log 2: Sept. 26, 2017
+
+Work on making ui's in android studio and changing between activites

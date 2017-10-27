@@ -1,0 +1,4 @@
+Dev Log 4: Oct. 10, 2017
+
+Created a basic chat app using pusher, where server recieves 
+mesages from client. Still debugging.

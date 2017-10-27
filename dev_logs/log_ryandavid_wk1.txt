@@ -1,0 +1,3 @@
+Dev Log 1: Sept. 19, 2017
+
+Downloaded android studo, github and did research into learning android studio
