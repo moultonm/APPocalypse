@@ -28,8 +28,8 @@ MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Shelly\.andr
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\6112f12be054c0b0fe764cbf96324065c8084a33\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\47eddba32e333da1de81f1a60d179ef89e1ce1b9\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\b421acd28ad1023325553e1fb56094b208040ed2\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5b8aa12f137b55dba7a3b2419ccc69fac4d5a42d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\32be66373a085eb6271d313029f13b416ed6fcde\output\AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from C:\Users\Shelly\Documents\GitHub\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:10:9-33
@@ -88,13 +88,13 @@ MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Shelly\.android\
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\3063ef7814bd981567a8945119223d465553a444\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\86ba1481c48f07bc2680773126bcd56da51a0eff\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\276b2c9dbd98acf0d1d20036aa4e5086fe38f632\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\a863c7226d95c6e0c0b05e461276f13321aafc7f\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\291f514e878713c78c2718f7f047218216038c26\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\6112f12be054c0b0fe764cbf96324065c8084a33\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\47eddba32e333da1de81f1a60d179ef89e1ce1b9\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\b421acd28ad1023325553e1fb56094b208040ed2\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5b8aa12f137b55dba7a3b2419ccc69fac4d5a42d\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\a863c7226d95c6e0c0b05e461276f13321aafc7f\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\32be66373a085eb6271d313029f13b416ed6fcde\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\d4a97f5210dbd59418109a44f59150bc6497516e\output\AndroidManifest.xml:23:9-59
@@ -109,13 +109,13 @@ ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Shelly\.android\b
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\3063ef7814bd981567a8945119223d465553a444\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\86ba1481c48f07bc2680773126bcd56da51a0eff\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\276b2c9dbd98acf0d1d20036aa4e5086fe38f632\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\a863c7226d95c6e0c0b05e461276f13321aafc7f\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\291f514e878713c78c2718f7f047218216038c26\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\6112f12be054c0b0fe764cbf96324065c8084a33\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\47eddba32e333da1de81f1a60d179ef89e1ce1b9\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\b421acd28ad1023325553e1fb56094b208040ed2\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5b8aa12f137b55dba7a3b2419ccc69fac4d5a42d\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\a863c7226d95c6e0c0b05e461276f13321aafc7f\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\5d013708f37997eeeafc875d49384edd1f137c61\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\32be66373a085eb6271d313029f13b416ed6fcde\output\AndroidManifest.xml:25:5-27:41
 	android:value
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Shelly\.android\build-cache\d4a97f5210dbd59418109a44f59150bc6497516e\output\AndroidManifest.xml:27:9-38

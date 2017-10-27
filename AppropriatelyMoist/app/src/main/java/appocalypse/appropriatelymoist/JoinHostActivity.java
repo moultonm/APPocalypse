@@ -2,8 +2,6 @@ package appocalypse.appropriatelymoist;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -20,7 +18,7 @@ public class JoinHostActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView nameField = (TextView) findViewById(R.id.userName);
+        TextView nameField = (TextView) findViewById(R.id.message);
         userName = getIntent().getStringExtra("userName");
         nameField.setText(userName);
 

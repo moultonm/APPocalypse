@@ -2,35 +2,43 @@ package appocalypse.appropriatelymoist;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListView;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
 public class MessageRoomActivity extends AppCompatActivity {
-    ArrayList<String> messageList = new ArrayList<String>();
-    ArrayAdapter<String> adapter;
+
+    private RecyclerView reView;
+    ArrayList<Message> messages;
     Socket mSocket;
     String userName;
     String room;
+    MessagesAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_room);
 
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, messageList);
-        //setListAdapter(adapter);
-        ListView listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(adapter);
+        reView = (RecyclerView) findViewById(R.id.messageList);
+
+        messages = new ArrayList<Message>();
+        mAdapter = new MessagesAdapter(this, messages);
+        reView.setAdapter(mAdapter);
+        reView.setLayoutManager(new LinearLayoutManager(this));
+
+
 
         userName = getIntent().getStringExtra("userName");
         room = getIntent().getStringExtra("roomName");
@@ -41,7 +49,7 @@ public class MessageRoomActivity extends AppCompatActivity {
             try {
                 mSocket = IO.socket("http://99.249.40.162:2406");
             } catch (URISyntaxException e) {
-                messageList.add(e.toString());
+                messages.add(new Message(e.toString()));
             }
         }
 
@@ -99,14 +107,7 @@ public class MessageRoomActivity extends AppCompatActivity {
     private Emitter.Listener onNewMessage = new Emitter.Listener() {
         @Override
         public void call(final Object... args) {
-//            String mess = (String) args[0];
-//
-//            messageList.add(mess);
-//            if (messageList.size() >6) {
-//                messageList.remove(0);
-//            }
-//
-//            adapter.notifyDataSetChanged();
+            String mess = (String) args[0];
 
 
             runOnUiThread(new Runnable() {
@@ -115,13 +116,9 @@ public class MessageRoomActivity extends AppCompatActivity {
 
                     String mess = (String) args[0];
 
-                    messageList.add(mess);
-                    if (messageList.size() >6) {
-                        messageList.remove(0);
-                    }
-
-                    adapter.notifyDataSetChanged();
-
+                    messages.add(new Message(mess));
+                    mAdapter.notifyItemInserted(messages.size()-1);
+                    reView.scrollToPosition(mAdapter.getItemCount()-1);
                 }
             });
 
