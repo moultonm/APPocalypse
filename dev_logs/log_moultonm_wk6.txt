@@ -1,0 +1,16 @@
+Dev Log 6: Week of Oct. 24, 2017
+
+Activities:
+- Redesigned chat functionality using Android's RecyclerView instead of ListView. This provides a much nicer interface with
+  proper scrolling chat log
+  
+- Got Socket.io working with channels to segment chat messages into their own streams
+
+- Created a chat room system, where users host rooms (stored on the server) and then subscribe to that room's unique chat stream
+
+- Added a 'join room' interface, that asks the server for a listing of currently available chat rooms and nicely displays them
+  for the user to pick from. Whichever room the user picks properly joins them to that room's chat stream
+  
+- Wrote up documentation for deliverable 2 and discussed demo plans with team
+
+Time Taken: ~15 hrs
