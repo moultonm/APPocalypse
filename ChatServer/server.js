@@ -84,12 +84,14 @@ io.on("connection", function(socket){ //all socket handling happens in here
 	socket.on("roomList",function(data){
 		for (var i=0; i<activeRooms.length;i++){
 			//the room name and room host fields are delimited by a slash
-			socket.emit("room", activeRooms[i].name + "/" + activeRooms[i].host);
+			socket.emit("room", activeRooms[i].num + " - " + activeRooms[i].name + "/" + activeRooms[i].host);
 		}
 	});
 
 	//when the user clicks on a specific room to join it
 	socket.on("join",function(data){
+
+		console.log("joined room " + data);
 		socket.join(data); //subscribe them to that room
 		socket.room = data;
 		getRoom(data).users++;
@@ -123,9 +125,11 @@ io.on("connection", function(socket){ //all socket handling happens in here
 
 		//here we make sure to delete the room if it became empty
 		rm = getRoom(socket.room);
+		if (rm){
 		rm.users--;
 		if (rm.users == 0){
 			activeRooms.splice(getRoomPos(socket.room), getRoomPos(socket.room)+1);
+		}
 		}
 
 		clients = clients.filter(function(ele){
