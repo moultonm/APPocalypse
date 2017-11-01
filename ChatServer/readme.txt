@@ -7,6 +7,7 @@ Running Instructions: From the ChatServer directory, run "node server.js"
                       Access the server from your.ip.address:2406
 
 Android App Info:
+- You ONLY need to care about the 'server.js' file for Android purposes
 - Connects to your.server.ip.address:2406
 - All "data" sent between server and client are just plain strings
 - Server will store name="data" as a chat user upon receiving an "intro" event [ie. socket.emit("intro","bob")]
