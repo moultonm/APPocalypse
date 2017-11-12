@@ -1,0 +1,10 @@
+Dev Log 6: Oct 30 - Nov 3
+
+Activities:
+
+- prepared for presentation for D2
+- Debugged the client application
+- Test all functionalities described in D1
+
+
+Time: 2 hrs
