@@ -1,0 +1,9 @@
+Dev Log 8: Week of Nov. 7, 2017
+
+Activities:
+- Discussed D2 with our TA Lexi, went over the things we did wrong (component diagram) and how to approach it differently for D3
+- Detailed plans for the next month, our main focus is going to be working out the architectural styles and design patterns since
+  they are the element we are most lacking, and is worth most
+- Also thought up some small improvements for the usability of the app itself
+
+Time Taken: ~2.5 hrs
