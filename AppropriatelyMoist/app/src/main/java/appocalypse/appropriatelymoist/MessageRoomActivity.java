@@ -26,6 +26,8 @@ public class MessageRoomActivity extends AppCompatActivity {
     String room;
     MessagesAdapter mAdapter;
 
+    private MessageRoomManager mMessageRoom;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +36,16 @@ public class MessageRoomActivity extends AppCompatActivity {
         reView = (RecyclerView) findViewById(R.id.messageList);
 
         messages = new ArrayList<Message>();
-        mAdapter = new MessagesAdapter(this, messages);
+        //mAdapter = new MessagesAdapter(this, messages);
         reView.setAdapter(mAdapter);
         reView.setLayoutManager(new LinearLayoutManager(this));
 
 
+        mMessageRoom = new MessageRoomManager(reView, this);
 
-        userName = getIntent().getStringExtra("userName");
+
+
+        userName = UserInfo.getUserInfo().getUserName();
         room = getIntent().getStringExtra("roomName");
 
 
@@ -90,9 +95,12 @@ public class MessageRoomActivity extends AppCompatActivity {
     public void sendMessage(View v){
         EditText message = (EditText) findViewById(R.id.messageBox);
 
-        mSocket.emit("message", message.getText().toString());
+        mMessageRoom.sendMessage(message.getText().toString());
+/*        mSocket.emit("message", message.getText().toString());
         mSocket.emit("newRequest", message.getText().toString());
+        */
         message.setText("");
+
 
         //mSocket.on("")
 
@@ -107,18 +115,14 @@ public class MessageRoomActivity extends AppCompatActivity {
     private Emitter.Listener onNewMessage = new Emitter.Listener() {
         @Override
         public void call(final Object... args) {
-            String mess = (String) args[0];
+            //String mess = (String) args[0];
 
 
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-
                     String mess = (String) args[0];
-
-                    messages.add(new Message(mess));
-                    mAdapter.notifyItemInserted(messages.size()-1);
-                    reView.scrollToPosition(mAdapter.getItemCount()-1);
+                    mMessageRoom.recieveNewMessage(mess);
                 }
             });
 

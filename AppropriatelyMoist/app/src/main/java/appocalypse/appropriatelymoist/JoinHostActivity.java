@@ -19,8 +19,7 @@ public class JoinHostActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TextView nameField = (TextView) findViewById(R.id.message);
-        userName = getIntent().getStringExtra("userName");
-        nameField.setText(userName);
+        nameField.setText(UserInfo.getUserInfo().getUserName());
 
 
 
@@ -28,13 +27,11 @@ public class JoinHostActivity extends AppCompatActivity {
 
     public void join(View view){
         Intent startNewActivity = new Intent(this, JoinActivity.class);
-        startNewActivity.putExtra("userName", userName);
         startActivity(startNewActivity);
     }
 
     public void host(View view){
         Intent startNewActivity = new Intent(this, HostActivity.class);
-        startNewActivity.putExtra("userName", userName);
         startActivity(startNewActivity);
     }
 }

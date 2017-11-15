@@ -18,13 +18,26 @@ public class MessageRoomManager {
     ArrayList<Message> messages;
     MessagesAdapter mAdapter;
 
-    public MessageRoomManager(RecyclerView view, MessagesAdapter adapter, Context ctx){
+    public MessageRoomManager(RecyclerView view, Context ctx){
         this.reView = view;
-        this.mAdapter = adapter;
+
         messages = new ArrayList<Message>();
+        mAdapter = new MessagesAdapter(ctx, messages);
+
         reView.setAdapter(mAdapter);
         reView.setLayoutManager(new LinearLayoutManager(ctx));
 
+    }
+
+    public void recieveNewMessage(String mess){
+        messages.add(new Message(mess));
+        mAdapter.notifyItemInserted(messages.size()-1);
+        reView.scrollToPosition(mAdapter.getItemCount()-1);
+    }
+
+
+    public void sendMessage(String mess) {
+        SocketManager.manageSocket.sendMessage(mess);
     }
 
 

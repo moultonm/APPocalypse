@@ -49,6 +49,14 @@ public class SocketManager {
         return true;
     }
 
+    public boolean sendMessage(String mess) {
+        if (mSocket == null) return false;
+
+        mSocket.emit("message", mess);
+
+        return true;
+    }
+
     public boolean hostRoomRequest(String roomName) {
         if (mSocket == null) return false;
 
@@ -63,6 +71,14 @@ public class SocketManager {
 
     }
 
+    public boolean setEmitListener(String key, Emitter.Listener mListener) {
+        if (mSocket == null) return false;
+
+        mSocket.on(key, mListener);
+
+        return true;
+    }
+
     private Emitter.Listener onConnect = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
@@ -70,26 +86,4 @@ public class SocketManager {
         }
     };
 
-    private Emitter.Listener onNewMessage = new Emitter.Listener() {
-        @Override
-        public void call(final Object... args) {
-            String mess = (String) args[0];
-            //MessageRoomManager.recieveNewMessage(mess);
-
-/*
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-
-                    String mess = (String) args[0];
-
-                    messages.add(new Message(mess));
-                    mAdapter.notifyItemInserted(messages.size()-1);
-                    reView.scrollToPosition(mAdapter.getItemCount()-1);
-                }
-            });*/
-
-
-        }
-    };
 }

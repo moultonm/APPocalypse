@@ -8,13 +8,11 @@ import android.widget.EditText;
 
 public class HostActivity extends AppCompatActivity {
 
-    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host);
-        userName = getIntent().getStringExtra("userName");
     }
 
 
@@ -22,7 +20,6 @@ public class HostActivity extends AppCompatActivity {
 
         String roomName = ((EditText) findViewById(R.id.roomName)).getText().toString();
         Intent startNewActivity = new Intent(this, MessageRoomActivity.class);
-        startNewActivity.putExtra("userName", userName);
         startNewActivity.putExtra("roomName", roomName);
         startActivity(startNewActivity);
     }
