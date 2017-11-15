@@ -26,22 +26,22 @@ public class MessageRoomActivity extends AppCompatActivity {
     String room;
     MessagesAdapter mAdapter;
 
-    private MessageRoomManager mMessageRoom;
+    private MessagingManager mMessageRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_room);
 
-        reView = (RecyclerView) findViewById(R.id.messageList);
+        reView = (RecyclerView) findViewById(R.id.roomList);
 
         messages = new ArrayList<Message>();
-        //mAdapter = new MessagesAdapter(this, messages);
+        mAdapter = new MessagesAdapter(this, messages);
         reView.setAdapter(mAdapter);
         reView.setLayoutManager(new LinearLayoutManager(this));
 
 
-        mMessageRoom = new MessageRoomManager(reView, this);
+        mMessageRoom = new MessagingManager(reView, this);
 
 
 
@@ -95,10 +95,10 @@ public class MessageRoomActivity extends AppCompatActivity {
     public void sendMessage(View v){
         EditText message = (EditText) findViewById(R.id.messageBox);
 
-        mMessageRoom.sendMessage(message.getText().toString());
-/*        mSocket.emit("message", message.getText().toString());
-        mSocket.emit("newRequest", message.getText().toString());
-        */
+        //mMessageRoom.sendMessage(message.getText().toString());
+        mSocket.emit("message", message.getText().toString());
+        //mSocket.emit("newRequest", message.getText().toString());
+
         message.setText("");
 
 
@@ -122,7 +122,7 @@ public class MessageRoomActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     String mess = (String) args[0];
-                    mMessageRoom.recieveNewMessage(mess);
+                    //mMessageRoom.recieveNewMessage(mess);
                 }
             });
 
