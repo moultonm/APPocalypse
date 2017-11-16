@@ -1,5 +1,7 @@
 package appocalypse.appropriatelymoist;
 
+import android.util.Log;
+
 import java.net.URISyntaxException;
 
 import io.socket.client.IO;
@@ -13,30 +15,28 @@ import io.socket.emitter.Emitter;
 public class SocketManager {
 
     public static SocketManager manageSocket = new SocketManager();
+
+    private static String url = "http://99.249.40.162:2406";
     private Socket mSocket;
 
     private SocketManager(){
-        connectSocket();
+        mSocket = null;
     }
 
-    private boolean connectSocket(){
+    private static SocketManager getManageSocket(){ return manageSocket;}
+
+    public boolean connectSocket(){
 
             try {
-                mSocket = IO.socket("http://99.249.40.162:2406");
+                mSocket = IO.socket(url);
             } catch (URISyntaxException e) {
+                Log.e("login", e.toString());
                 return false;
             }
 
         mSocket.on(Socket.EVENT_CONNECT,onConnect);
         mSocket.connect();
 
-        return true;
-    }
-
-    public boolean sendLoginRequest(){
-        if (mSocket == null) return false;
-
-        mSocket.emit("login", UserInfo.getUserInfo().getUserName());
 
         return true;
     }
@@ -49,10 +49,34 @@ public class SocketManager {
         return true;
     }
 
+    public boolean loginRequest(String userName){
+        if (mSocket == null) return false;
+
+        mSocket.emit("login", userName);
+
+        return true;
+    }
+
     public boolean sendMessage(String mess) {
         if (mSocket == null) return false;
 
         mSocket.emit("message", mess);
+
+        return true;
+    }
+
+    public boolean introRoomRequest(){
+        if (mSocket == null) return false;
+
+        mSocket.emit("intro");
+
+        return true;
+    }
+
+    public boolean roomListRequest(){
+        if (mSocket == null) return false;
+
+        mSocket.emit("roomList");
 
         return true;
     }
@@ -70,6 +94,8 @@ public class SocketManager {
         mSocket = null;
 
     }
+
+
 
     public boolean setEmitListener(String key, Emitter.Listener mListener) {
         if (mSocket == null) return false;

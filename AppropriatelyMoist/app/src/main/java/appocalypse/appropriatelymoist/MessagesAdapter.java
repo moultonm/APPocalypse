@@ -23,9 +23,9 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
         // We also create a constructor that accepts the entire item row
         // and does the view lookups to find each subview
         public ViewHolder(View itemView) {
-            // Stores the itemView in a public final member variable that can be used
-            // to access the context from any ViewHolder instance.
+
             super(itemView);
+            messageTextView = (TextView) itemView.findViewById(R.id.messageString);
 
 
         }
@@ -70,9 +70,6 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
         // Set item views based on your views and data model
         TextView textView = viewHolder.messageTextView;
         textView.setText(message.getMessage());
-        //Button button = viewHolder.roomButton;
-        //button.setText("Join");
-        //button.setEnabled(contact.isOnline());
     }
 
     // Returns the total count of items in the list

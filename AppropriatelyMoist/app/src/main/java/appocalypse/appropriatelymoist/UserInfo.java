@@ -18,7 +18,7 @@ public class UserInfo {
 
     public void setUserInfo(String userName) {
         name = userName;
-        //updateGPS();
+        updateGPS();
     }
 
     public static UserInfo getUserInfo(){

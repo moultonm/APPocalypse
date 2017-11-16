@@ -20,7 +20,7 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
         // Your holder should contain a member variable
         // for any view that will be set as you render a row
 
-        public TextView messageTextView;
+
         public TextView hostName;
         public TextView roomName;
         public Button roomButton;
@@ -32,7 +32,7 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
             // to access the context from any ViewHolder instance.
             super(itemView);
 
-            messageTextView = (TextView) itemView.findViewById(R.id.contact_name);
+
             hostName = (TextView) itemView.findViewById(R.id.host_name);
             roomName = (TextView) itemView.findViewById(R.id.room_name);
             roomButton = (Button) itemView.findViewById(R.id.join_button);
@@ -77,7 +77,7 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
         Room room = mRooms.get(position);
 
         TextView roomName = viewHolder.roomName;
-        roomName.setText("  " + room.getRoomName());
+        roomName.setText(room.getRoomId() + "  " + room.getRoomName());
 
         TextView hostName = viewHolder.hostName;
         hostName.setText("Host: " + room.getHostName());

@@ -1,11 +1,6 @@
 package appocalypse.appropriatelymoist;
 
-import android.content.Context;
 import android.view.View;
-
-import java.util.ArrayList;
-
-import io.socket.emitter.Emitter;
 
 /**
  * Created by Shelly on 2017-10-27.

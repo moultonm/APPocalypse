@@ -19,8 +19,6 @@ import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
 public class JoinActivity extends AppCompatActivity {
-    private String userName;
-    Socket mSocket;
     private RecyclerView reView;
     ArrayList<Room> rooms;
     RoomsAdapter mAdapter;
@@ -29,7 +27,7 @@ public class JoinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
-        userName = UserInfo.getUserInfo().getUserName();
+
 
         reView = (RecyclerView) findViewById(R.id.roomList);
 
@@ -38,28 +36,14 @@ public class JoinActivity extends AppCompatActivity {
         reView.setAdapter(mAdapter);
         reView.setLayoutManager(new LinearLayoutManager(this));
 
+        SocketManager.manageSocket.setEmitListener("room", onNewRoom);
+        SocketManager.manageSocket.roomListRequest();
 
-        //ruh roh
-        {
-            try {
-                mSocket = IO.socket("http://99.249.40.162:2406");
-            } catch (URISyntaxException e) {
-                Log.e("socket",e.toString());
-            }
-        }
-
-        mSocket.on(Socket.EVENT_CONNECT,onConnect);
-        mSocket.on("room", onNewRoom);
-        mSocket.connect();
-        mSocket.emit("login", userName);
-        mSocket.emit("roomList");
     }
 
     public void openChatRoom(View view, String id){
-        mSocket.close();
+        SocketManager.manageSocket.joinRoomRequest(id);
         Intent startNewActivity = new Intent(this, MessageRoomActivity.class);
-        startNewActivity.putExtra("userName", userName);
-        startNewActivity.putExtra("roomId", id);
         startActivity(startNewActivity);
 
     }
@@ -80,40 +64,22 @@ public class JoinActivity extends AppCompatActivity {
 
                     //NEED TO BE MODIFIED
                     final String[] data = ((String)args[0]).split("/");
-                    String roomId = data[0].charAt(0)+"";
+
                     View.OnClickListener vlistener = new View.OnClickListener() {
                         public void onClick(View v) {
-                            openChatRoom(v, data[0].charAt(0)+"");
+                            openChatRoom(v, data[0]);
                         }
                     };
 
-                    //MODIFY SERVER TO SEND DATA[0].substring(4)
-                    Room newRoom = new Room(data[0].substring(4), data[1], roomId, vlistener);
+
+                    Room newRoom = new Room(data[2], data[1], data[0], vlistener);
                     rooms.add(newRoom);
                     mAdapter.notifyItemInserted(rooms.size()-1);
 
-                    /*addRoom(data[0], data[1]).setOnClickListener(new View.OnClickListener() {
-                        public void onClick(View v) {
-                            openChatRoom(v, data[0].charAt(0)+"");
-                        }
-                    });*/
                 }
             });
         }
     };
 
-    private Button addRoom(String rname, String uname){
-/*        Button myButton = new Button(this);
-        myButton.setText(rname+"\nHosted by: "+uname);
 
-        LinearLayout ll = (LinearLayout)findViewById(R.id.btnlayout);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        ll.addView(myButton, lp);
-
-        //myButton.setTag("id" , "id");
-        myButton.setTag("id");
-
-        return myButton;*/
-        return null;
-    }
 }

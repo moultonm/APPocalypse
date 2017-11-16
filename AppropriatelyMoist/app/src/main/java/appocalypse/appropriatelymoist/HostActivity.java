@@ -20,7 +20,8 @@ public class HostActivity extends AppCompatActivity {
 
         String roomName = ((EditText) findViewById(R.id.roomName)).getText().toString();
         Intent startNewActivity = new Intent(this, MessageRoomActivity.class);
-        startNewActivity.putExtra("roomName", roomName);
+        SocketManager.manageSocket.hostRoomRequest(roomName);
+
         startActivity(startNewActivity);
     }
 
