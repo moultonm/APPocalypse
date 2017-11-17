@@ -30,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
             toast.show();
         } else {
 
-            SocketManager.manageSocket.connectSocket();
-            SocketManager.manageSocket.loginRequest(userName);
+            SocketManager.getManageSocket().connectSocket();
+            SocketManager.getManageSocket().loginRequest(userName);
 
             UserInfo.getUserInfo().setUserInfo(userName);
             Intent startNewActivity = new Intent(this, JoinHostActivity.class);

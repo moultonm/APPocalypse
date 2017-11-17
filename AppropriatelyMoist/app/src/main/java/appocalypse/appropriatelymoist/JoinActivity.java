@@ -36,24 +36,18 @@ public class JoinActivity extends AppCompatActivity {
         reView.setAdapter(mAdapter);
         reView.setLayoutManager(new LinearLayoutManager(this));
 
-        SocketManager.manageSocket.setEmitListener("room", onNewRoom);
-        SocketManager.manageSocket.roomListRequest();
+        SocketManager.getManageSocket().setEmitListener("room", onNewRoom);
+        SocketManager.getManageSocket().roomListRequest();
 
     }
 
     public void openChatRoom(View view, String id){
-        SocketManager.manageSocket.joinRoomRequest(id);
+        SocketManager.getManageSocket().joinRoomRequest(id);
         Intent startNewActivity = new Intent(this, MessageRoomActivity.class);
         startActivity(startNewActivity);
 
     }
 
-    private Emitter.Listener onConnect = new Emitter.Listener() {
-        @Override
-        public void call(final Object... args) {
-
-        }
-    };
 
     private Emitter.Listener onNewRoom = new Emitter.Listener() {
         @Override

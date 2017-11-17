@@ -37,7 +37,7 @@ public class MessagingManager {
 
 
     public void sendMessage(String mess) {
-        SocketManager.manageSocket.sendMessage(mess);
+        SocketManager.getManageSocket().sendMessage(mess);
     }
 
 

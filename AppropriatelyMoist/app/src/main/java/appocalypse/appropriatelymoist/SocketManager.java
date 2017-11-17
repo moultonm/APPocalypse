@@ -1,8 +1,10 @@
 package appocalypse.appropriatelymoist;
 
+import android.content.Intent;
 import android.util.Log;
 
 import java.net.URISyntaxException;
+import java.util.concurrent.TimeUnit;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -14,18 +16,23 @@ import io.socket.emitter.Emitter;
 
 public class SocketManager {
 
-    public static SocketManager manageSocket = new SocketManager();
+    private static SocketManager manageSocket = new SocketManager();
 
     private static String url = "http://99.249.40.162:2406";
     private Socket mSocket;
+
 
     private SocketManager(){
         mSocket = null;
     }
 
-    private static SocketManager getManageSocket(){ return manageSocket;}
+
+    public synchronized static SocketManager getManageSocket(){ return manageSocket;}
 
     public boolean connectSocket(){
+            if (mSocket != null) {
+                return false;
+            }
 
             try {
                 mSocket = IO.socket(url);
@@ -35,6 +42,7 @@ public class SocketManager {
             }
 
         mSocket.on(Socket.EVENT_CONNECT,onConnect);
+        mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.connect();
 
 
@@ -89,9 +97,13 @@ public class SocketManager {
         return true;
     }
 
-    public void disconnectSocket(){
+    public boolean disconnectSocket(){
+        if(mSocket == null) return false;
+
         mSocket.close();
         mSocket = null;
+
+        return true;
 
     }
 
@@ -108,6 +120,15 @@ public class SocketManager {
     private Emitter.Listener onConnect = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
+
+        }
+    };
+
+    private Emitter.Listener onDisconnect = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            mSocket = null;
+
 
         }
     };

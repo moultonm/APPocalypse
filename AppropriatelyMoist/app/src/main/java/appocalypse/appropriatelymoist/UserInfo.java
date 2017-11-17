@@ -21,7 +21,7 @@ public class UserInfo {
         updateGPS();
     }
 
-    public static UserInfo getUserInfo(){
+    public synchronized static UserInfo getUserInfo(){
         if(user == null) {
             user.setUserInfo("error");
         }

@@ -30,18 +30,18 @@ public class MessageRoomActivity extends AppCompatActivity {
 
         mMessageRoom = new MessagingManager(reView, this);
 
-        SocketManager.manageSocket.setEmitListener("message", onNewMessage);
+        SocketManager.getManageSocket().setEmitListener("message", onNewMessage);
         System.out.println("going to send intro?");
-        SocketManager.manageSocket.introRoomRequest();
+        SocketManager.getManageSocket().introRoomRequest();
 
     }
 
     @Override
     public void onBackPressed() {
 
-        SocketManager.manageSocket.disconnectSocket();
-        SocketManager.manageSocket.connectSocket();
-        SocketManager.manageSocket.loginRequest(UserInfo.getUserInfo().getUserName());
+        SocketManager.getManageSocket().disconnectSocket();
+        SocketManager.getManageSocket().connectSocket();
+        SocketManager.getManageSocket().loginRequest(UserInfo.getUserInfo().getUserName());
         Intent startNewActivity = new Intent(this, JoinHostActivity.class);
         startActivity(startNewActivity);
     }

@@ -37,7 +37,6 @@ public class JoinHostActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        SocketManager.manageSocket.disconnectSocket();
         Intent startNewActivity = new Intent(this, LoginActivity.class);
         startActivity(startNewActivity);
     }
