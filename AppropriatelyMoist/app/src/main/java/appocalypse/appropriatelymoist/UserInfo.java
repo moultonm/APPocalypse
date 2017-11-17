@@ -18,10 +18,10 @@ public class UserInfo {
 
     public void setUserInfo(String userName) {
         name = userName;
-        //updateGPS();
+        updateGPS();
     }
 
-    public static UserInfo getUserInfo(){
+    public synchronized static UserInfo getUserInfo(){
         if(user == null) {
             user.setUserInfo("error");
         }

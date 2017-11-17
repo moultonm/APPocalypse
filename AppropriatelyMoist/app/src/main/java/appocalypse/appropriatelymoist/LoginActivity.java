@@ -7,46 +7,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        EditText name = (EditText) findViewById(R.id.nameField);
         setSupportActionBar(toolbar);
     }
 
     public void login(View view){
         String userName = ((EditText) findViewById(R.id.nameField)).getText().toString();
-        Intent startNewActivity = new Intent(this, JoinHostActivity.class);
-        startNewActivity.putExtra("userName", userName);
+        //System.out.println("user name : " + userName);
+        if (userName.isEmpty()) {
+            Toast toast = Toast.makeText(this, "Name cannot be empty..", Toast.LENGTH_SHORT);
+            toast.show();
+        } else {
 
-        startActivity(startNewActivity);
-    }
-    /*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
-        return true;
-    }
+            SocketManager.getManageSocket().connectSocket();
+            SocketManager.getManageSocket().loginRequest(userName);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            UserInfo.getUserInfo().setUserInfo(userName);
+            Intent startNewActivity = new Intent(this, JoinHostActivity.class);
+            startActivity(startNewActivity);
         }
 
-        return super.onOptionsItemSelected(item);
-    }*/
+    }
+
+
 }

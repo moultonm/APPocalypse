@@ -1,6 +1,10 @@
 package appocalypse.appropriatelymoist;
 
+import android.content.Intent;
+import android.util.Log;
+
 import java.net.URISyntaxException;
+import java.util.concurrent.TimeUnit;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -12,31 +16,35 @@ import io.socket.emitter.Emitter;
 
 public class SocketManager {
 
-    public static SocketManager manageSocket = new SocketManager();
+    private static SocketManager manageSocket = new SocketManager();
+
+    private static String url = "http://99.249.40.162:2406";
     private Socket mSocket;
 
+
     private SocketManager(){
-        connectSocket();
+        mSocket = null;
     }
 
-    private boolean connectSocket(){
+
+    public synchronized static SocketManager getManageSocket(){ return manageSocket;}
+
+    public boolean connectSocket(){
+            if (mSocket != null) {
+                return false;
+            }
 
             try {
-                mSocket = IO.socket("http://99.249.40.162:2406");
+                mSocket = IO.socket(url);
             } catch (URISyntaxException e) {
+                Log.e("login", e.toString());
                 return false;
             }
 
         mSocket.on(Socket.EVENT_CONNECT,onConnect);
+        mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.connect();
 
-        return true;
-    }
-
-    public boolean sendLoginRequest(){
-        if (mSocket == null) return false;
-
-        mSocket.emit("login", UserInfo.getUserInfo().getUserName());
 
         return true;
     }
@@ -49,6 +57,38 @@ public class SocketManager {
         return true;
     }
 
+    public boolean loginRequest(String userName){
+        if (mSocket == null) return false;
+
+        mSocket.emit("login", userName);
+
+        return true;
+    }
+
+    public boolean sendMessage(String mess) {
+        if (mSocket == null) return false;
+
+        mSocket.emit("message", mess);
+
+        return true;
+    }
+
+    public boolean introRoomRequest(){
+        if (mSocket == null) return false;
+
+        mSocket.emit("intro");
+
+        return true;
+    }
+
+    public boolean roomListRequest(){
+        if (mSocket == null) return false;
+
+        mSocket.emit("roomList");
+
+        return true;
+    }
+
     public boolean hostRoomRequest(String roomName) {
         if (mSocket == null) return false;
 
@@ -57,10 +97,24 @@ public class SocketManager {
         return true;
     }
 
-    public void disconnectSocket(){
+    public boolean disconnectSocket(){
+        if(mSocket == null) return false;
+
         mSocket.close();
         mSocket = null;
 
+        return true;
+
+    }
+
+
+
+    public boolean setEmitListener(String key, Emitter.Listener mListener) {
+        if (mSocket == null) return false;
+
+        mSocket.on(key, mListener);
+
+        return true;
     }
 
     private Emitter.Listener onConnect = new Emitter.Listener() {
@@ -70,26 +124,13 @@ public class SocketManager {
         }
     };
 
-    private Emitter.Listener onNewMessage = new Emitter.Listener() {
+    private Emitter.Listener onDisconnect = new Emitter.Listener() {
         @Override
-        public void call(final Object... args) {
-            String mess = (String) args[0];
-            //MessageRoomManager.recieveNewMessage(mess);
-
-/*
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-
-                    String mess = (String) args[0];
-
-                    messages.add(new Message(mess));
-                    mAdapter.notifyItemInserted(messages.size()-1);
-                    reView.scrollToPosition(mAdapter.getItemCount()-1);
-                }
-            });*/
+        public void call(Object... args) {
+            mSocket = null;
 
 
         }
     };
+
 }
