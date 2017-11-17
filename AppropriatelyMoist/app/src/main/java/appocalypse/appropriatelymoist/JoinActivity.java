@@ -41,6 +41,14 @@ public class JoinActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+        Intent startNewActivity = new Intent(this, JoinHostActivity.class);
+        startActivity(startNewActivity);
+    }
+
+
     public void openChatRoom(View view, String id){
         SocketManager.getManageSocket().joinRoomRequest(id);
         Intent startNewActivity = new Intent(this, MessageRoomActivity.class);

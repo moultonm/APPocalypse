@@ -25,6 +25,12 @@ public class HostActivity extends AppCompatActivity {
         startActivity(startNewActivity);
     }
 
+    @Override
+    public void onBackPressed() {
+
+        Intent startNewActivity = new Intent(this, JoinHostActivity.class);
+        startActivity(startNewActivity);
+    }
 
 
 
