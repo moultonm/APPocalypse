@@ -1,0 +1,8 @@
+Dev Log 9: Week of Nov. 14, 2017
+
+Activities:
+- Created several diagrams and wrote up documentation for D3.
+- Submitted diagrams to TA for review, and implemented feedback into our design.
+- Made some code cleanup and optimizations as well as implementing architecture/design patterns into the app.
+
+Time Taken: ~5 hrs
