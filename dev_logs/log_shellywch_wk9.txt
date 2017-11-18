@@ -1,0 +1,14 @@
+Dev Log 9: Oct 13 - Nov 17
+
+Activities:
+
+- added Room and RoomAdapter classes to use RecyclerView for andriod
+- implemented RecyclerView for JoinActivity
+- implemented a facade class MessagingMenager
+- implemented SocketManager and UserInfo classes that uses the Singleton design pattern
+- integrated MessagingManager, SocketManager, UserInfo to our mobile application
+- created UML diagram for the client side design
+- Writting parts of D3 
+
+
+Time: 13 hrs

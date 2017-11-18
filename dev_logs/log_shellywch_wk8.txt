@@ -3,7 +3,9 @@ Dev Log 8: Oct 6 - Nov 11
 Activities:
 
 - reasearched design pattern
-- created 
+- created UserInfo class
+- Created and designed UML diagram to fit Singleton and Facade design pattern
+- Send TA for feedback (Thank you Lexi)
 
 
-Time: 2 hrs
+Time: 3 hrs
