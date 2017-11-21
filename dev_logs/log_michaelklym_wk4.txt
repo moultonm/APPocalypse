@@ -1,0 +1,5 @@
+Dev Log 4: Oct. 10, 2017
+
+-researched obtaining device GPS from Google maps JavaScript API
+
+Time 2 hrs

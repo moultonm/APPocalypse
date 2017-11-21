@@ -1,0 +1,6 @@
+Dev Log 8: Nov. 7, 2017
+
+researched system architectural styles and design patterns
+worked on design pattern UML for D3
+
+Time 2 hrs

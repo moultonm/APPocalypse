@@ -1,0 +1,5 @@
+Dev Log 5: Oct. 17, 2017
+
+debugged message scrolling feature in chatroom
+
+Time 3 hrs
