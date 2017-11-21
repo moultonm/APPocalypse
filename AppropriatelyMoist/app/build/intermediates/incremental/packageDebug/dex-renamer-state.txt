@@ -1,7 +1,0 @@
-#Wed Nov 15 20:43:54 EST 2017
-base.0=C\:\\Users\\Shelly\\Documents\\GitHub\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b86dcfe34164d28dfd42f6cf19c461838f204b23
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Shelly\\Documents\\GitHub\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b361a62bdf2f276c200ca579088cbbfd8ac41d8f\\classes.dex
-base.1=C\:\\Users\\Shelly\\Documents\\GitHub\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b361a62bdf2f276c200ca579088cbbfd8ac41d8f
-file.0=C\:\\Users\\Shelly\\Documents\\GitHub\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b86dcfe34164d28dfd42f6cf19c461838f204b23\\classes.dex

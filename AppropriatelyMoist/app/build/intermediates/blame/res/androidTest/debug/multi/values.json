@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Shelly\\Documents\\GitHub\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\Matt\\Desktop\\school\\COMP3004\\APPocalypse\\AppropriatelyMoist\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\Shelly\\.android\\build-cache\\972423e8edec1e0ee12a1608c003aa992673bebf\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Matt\\.android\\build-cache\\732e07e1d97fade0d77b1793281f50892a970f81\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
