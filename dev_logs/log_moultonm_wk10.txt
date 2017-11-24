@@ -1,0 +1,8 @@
+Dev Log 10: Week of Nov. 21, 2017
+
+Activities:
+- Created and practiced D3 presentation slides with group.
+- Met and discussed final plans for D4.
+- Finished up the location feature between client and server, made rooms that are "out of range" not clickable but still display for demo purposes.
+
+Time Taken: ~4 hrs
