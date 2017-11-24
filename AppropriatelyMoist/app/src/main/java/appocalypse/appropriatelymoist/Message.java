@@ -17,8 +17,6 @@ public class Message {
         return message;
     }
 
-
-
     private static int lastContactId = 0;
 
     public static ArrayList<Message> createMessagesList(int numContacts) {
@@ -27,7 +25,6 @@ public class Message {
         for (int i = 1; i <= numContacts; i++) {
             contacts.add(new Message("This is :" + i));
         }
-
         return contacts;
     }
 }

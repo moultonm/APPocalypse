@@ -20,6 +20,16 @@ var roomNum = 0; //our global unique room identifier
 io.on("connection", function(socket){
 	console.log("Got a connection");
 
+	//stores the latitude for this user
+	socket.on("lat", function(data){
+		socket.lat = data;
+	});
+
+	//stores the longitude for this user
+	socket.on("long", function(data){
+		socket.long = data;
+	});
+
 	//when a user clicks on the host button, it drops them right into that room
 	socket.on("host",function(data){
 		room = [];
@@ -27,10 +37,12 @@ io.on("connection", function(socket){
 		room.name = data; //data is the name of the room entered by the client
 		room.host = socket.username;
 		room.users = 1; //we keep track of the # of users remaining in a room
+		room.lat = socket.lat; //set the location for this room
+		room.long = socket.long;
 		activeRooms.push(room);
 		socket.join(roomNum.toString()); //subscribes this user to the room he created
 		socket.room = roomNum.toString();
-		console.log("hosted room " + data + " id:" + room.num);
+		console.log("hosted room " + data + " id:" + room.num + " latlong:" + room.lat + "," + room.long);
 		roomNum++;
 	});
 
@@ -38,8 +50,16 @@ io.on("connection", function(socket){
 	//sends each active room one by one to the phone
 	socket.on("roomList", function(data){
         for (var i=0; i<activeRooms.length;i++){
+						var dist = Math.sqrt(Math.pow(socket.lat - activeRooms[i].lat, 2) + Math.pow(socket.long - activeRooms[i].long, 2));
+						console.log("Room distance: " + dist);
+
             //the room name and room host fields are delimited by a slash
-            socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host);
+						if (dist > 5.0){ //tell the app to 'gray out' this room
+            	socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/n");
+						}
+						else { //send room normally
+							socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/y");
+						}
         }
   });
 
@@ -70,11 +90,11 @@ io.on("connection", function(socket){
 	//lets everyone know when another user disconnects
 	socket.on("disconnect", function(){
 		console.log(socket.username + " disconnected");
-		io.to(socket.room).emit("message", socket.username + " disconnected.");
+		rm = getRoom(socket.room);
 
 		//here we make sure to delete the room if it became empty
-		rm = getRoom(socket.room);
 		if (rm){
+			io.to(socket.room).emit("message", socket.username + " disconnected.");
 			rm.room.users--;
 			if (rm.room.users == 0){
 				activeRooms.splice(rm.index, rm.index+1);

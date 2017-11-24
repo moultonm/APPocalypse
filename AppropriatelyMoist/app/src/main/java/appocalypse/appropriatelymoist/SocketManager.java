@@ -1,10 +1,8 @@
 package appocalypse.appropriatelymoist;
 
-import android.content.Intent;
 import android.util.Log;
 
 import java.net.URISyntaxException;
-import java.util.concurrent.TimeUnit;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -15,41 +13,39 @@ import io.socket.emitter.Emitter;
  */
 
 public class SocketManager {
-
     private static SocketManager manageSocket = new SocketManager();
 
     private static String url = "http://99.249.40.162:2406";
     private Socket mSocket;
 
-
-    private SocketManager(){
+    private SocketManager() {
         mSocket = null;
     }
 
+    public synchronized static SocketManager getManageSocket() {
+        return manageSocket;
+    }
 
-    public synchronized static SocketManager getManageSocket(){ return manageSocket;}
+    public boolean connectSocket() {
+        if (mSocket != null) {
+            return false;
+        }
 
-    public boolean connectSocket(){
-            if (mSocket != null) {
-                return false;
-            }
+        try {
+            mSocket = IO.socket(url);
+        } catch (URISyntaxException e) {
+            Log.e("login", e.toString());
+            return false;
+        }
 
-            try {
-                mSocket = IO.socket(url);
-            } catch (URISyntaxException e) {
-                Log.e("login", e.toString());
-                return false;
-            }
-
-        mSocket.on(Socket.EVENT_CONNECT,onConnect);
+        mSocket.on(Socket.EVENT_CONNECT, onConnect);
         mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.connect();
-
 
         return true;
     }
 
-    public boolean joinRoomRequest(String roomId){
+    public boolean joinRoomRequest(String roomId) {
         if (mSocket == null) return false;
 
         mSocket.emit("join", roomId);
@@ -57,10 +53,12 @@ public class SocketManager {
         return true;
     }
 
-    public boolean loginRequest(String userName){
+    public boolean loginRequest(String userName, double x, double y) {
         if (mSocket == null) return false;
 
         mSocket.emit("login", userName);
+        mSocket.emit("lat", x);
+        mSocket.emit("long", y);
 
         return true;
     }
@@ -73,7 +71,7 @@ public class SocketManager {
         return true;
     }
 
-    public boolean introRoomRequest(){
+    public boolean introRoomRequest() {
         if (mSocket == null) return false;
 
         mSocket.emit("intro");
@@ -81,7 +79,7 @@ public class SocketManager {
         return true;
     }
 
-    public boolean roomListRequest(){
+    public boolean roomListRequest() {
         if (mSocket == null) return false;
 
         mSocket.emit("roomList");
@@ -93,21 +91,17 @@ public class SocketManager {
         if (mSocket == null) return false;
 
         mSocket.emit("host", roomName);
-
         return true;
     }
 
-    public boolean disconnectSocket(){
-        if(mSocket == null) return false;
+    public boolean disconnectSocket() {
+        if (mSocket == null) return false;
 
         mSocket.close();
         mSocket = null;
 
         return true;
-
     }
-
-
 
     public boolean setEmitListener(String key, Emitter.Listener mListener) {
         if (mSocket == null) return false;
@@ -127,9 +121,10 @@ public class SocketManager {
     private Emitter.Listener onDisconnect = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
+            if (mSocket != null) {
+                mSocket.close();
+            }
             mSocket = null;
-
-
         }
     };
 

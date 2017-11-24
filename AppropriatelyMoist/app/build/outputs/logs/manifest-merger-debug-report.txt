@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml
@@ -17,8 +17,20 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:6:22-76
+uses-feature#android.hardware.location.gps
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:7:19-63
 application
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:7:5-31:19
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:9:5-33:19
+MERGED from [com.google.android.gms:play-services-location:11.0.1] C:\Users\Matt\.android\build-cache\3e23c1ec19cb88e1965d8f1ae276cb20d8b63162\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\Matt\.android\build-cache\62d3a89d1e58a4a8daf290499b4ec699c7af708a\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\Matt\.android\build-cache\5ef12d354b5f748430da15ab33940b7c3f54db56\output\AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matt\.android\build-cache\e72b01645c4a83fde4989270699b2b6b4ecf1a47\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\c3b888b1619f58cf98e9422a834bd7bd5d9f283a\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\9d5e99fa3155da1d53a77ab3d7e6a5b212c3d589\output\AndroidManifest.xml:29:5-20
@@ -32,57 +44,61 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Matt
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\1b28f125c5b82ee172ce626421a490ddda744b03\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\e3bf29fc32b253ce6c948ecd115ddaf1067dd9dd\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:10:9-33
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:12:9-33
 	android:supportsRtl
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:14:9-35
 	android:roundIcon
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:13:9-54
 	android:allowBackup
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:10:9-35
 	android:icon
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:11:9-43
 	android:theme
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:15:9-40
 activity#appocalypse.appropriatelymoist.LoginActivity
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:14:9-23:20
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:16:9-25:20
 	android:label
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:16:13-37
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:18:13-37
 	android:theme
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:15:13-42
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:17:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:23:27-74
 activity#appocalypse.appropriatelymoist.JoinHostActivity
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:24:9-27:59
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:26:9-29:59
 	android:label
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:26:13-61
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:28:13-61
 	android:theme
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:27:13-56
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:29:13-56
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:27:13-45
 activity#appocalypse.appropriatelymoist.JoinActivity
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:28:9-50
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:30:9-50
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:28:19-47
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:30:19-47
 activity#appocalypse.appropriatelymoist.HostActivity
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:29:9-50
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:31:9-50
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:29:19-47
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:31:19-47
 activity#appocalypse.appropriatelymoist.MessageRoomActivity
-ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:30:9-66
+ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:32:9-66
 	android:name
-		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:30:19-54
+		ADDED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml:32:19-54
 uses-sdk
 INJECTED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services-location:11.0.1] C:\Users\Matt\.android\build-cache\3e23c1ec19cb88e1965d8f1ae276cb20d8b63162\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\Matt\.android\build-cache\62d3a89d1e58a4a8daf290499b4ec699c7af708a\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\Matt\.android\build-cache\5ef12d354b5f748430da15ab33940b7c3f54db56\output\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Matt\.android\build-cache\e72b01645c4a83fde4989270699b2b6b4ecf1a47\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\c3b888b1619f58cf98e9422a834bd7bd5d9f283a\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\9d5e99fa3155da1d53a77ab3d7e6a5b212c3d589\output\AndroidManifest.xml:21:5-23:78
@@ -104,6 +120,20 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Matt\.an
 	android:minSdkVersion
 		INJECTED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Matt\Desktop\school\COMP3004\APPocalypse\AppropriatelyMoist\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\Matt\.android\build-cache\3f66596aa4f9520b946684c68d41304e628d1f30\output\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\Matt\.android\build-cache\5ef12d354b5f748430da15ab33940b7c3f54db56\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\Matt\.android\build-cache\5ef12d354b5f748430da15ab33940b7c3f54db56\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\Matt\.android\build-cache\5ef12d354b5f748430da15ab33940b7c3f54db56\output\AndroidManifest.xml:20:20-65
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\c3b888b1619f58cf98e9422a834bd7bd5d9f283a\output\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Matt\.android\build-cache\9d5e99fa3155da1d53a77ab3d7e6a5b212c3d589\output\AndroidManifest.xml:25:5-27:41

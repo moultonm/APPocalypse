@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
@@ -26,8 +25,6 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
 
             super(itemView);
             messageTextView = (TextView) itemView.findViewById(R.id.messageString);
-
-
         }
     }
 
@@ -46,7 +43,6 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
         return mContext;
     }
 
-
     @Override
     public MessagesAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
@@ -58,7 +54,6 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
         // Return a new holder instance
         MessagesAdapter.ViewHolder viewHolder = new MessagesAdapter.ViewHolder(messageView);
         return viewHolder;
-
     }
 
     // Involves populating data into the item through holder

@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class JoinHostActivity extends AppCompatActivity {
-
     private String userName;
 
     @Override
@@ -20,17 +19,16 @@ public class JoinHostActivity extends AppCompatActivity {
 
         TextView nameField = (TextView) findViewById(R.id.message);
         nameField.setText(UserInfo.getUserInfo().getUserName());
-
-
-
     }
 
-    public void join(View view){
+    //click handler for the 'join' button
+    public void join(View view) {
         Intent startNewActivity = new Intent(this, JoinActivity.class);
         startActivity(startNewActivity);
     }
 
-    public void host(View view){
+    //click handler for the 'host' button
+    public void host(View view) {
         Intent startNewActivity = new Intent(this, HostActivity.class);
         startActivity(startNewActivity);
     }

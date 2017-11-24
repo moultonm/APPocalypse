@@ -9,6 +9,9 @@
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -38,6 +41,14 @@
         <activity android:name="appocalypse.appropriatelymoist.JoinActivity" />
         <activity android:name="appocalypse.appropriatelymoist.HostActivity" />
         <activity android:name="appocalypse.appropriatelymoist.MessageRoomActivity" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
