@@ -15,12 +15,6 @@ public class JoinHostActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*        if(!SocketManager.getManageSocket().isConncted()) {
-            double[] latlong = UserInfo.getUserInfo().getLatLong();
-            SocketManager.getManageSocket().connectSocket();
-            SocketManager.getManageSocket().loginRequest(UserInfo.getUserInfo().getUserName(), latlong[0], latlong[1]);
-            System.out.println("IS NOT CONNCECTED AND RECONNECT");
-        }*/
         setContentView(R.layout.activity_join_host);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
