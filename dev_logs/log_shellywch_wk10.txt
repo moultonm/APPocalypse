@@ -1,0 +1,10 @@
+Dev Log 10: Nov 20 - Nov 24
+
+Activities:
+
+- Tested the gray out feature of the app
+- Worked on D4 Documentation
+- General bug testing for final product presentation
+
+
+Time: 3 hrs
