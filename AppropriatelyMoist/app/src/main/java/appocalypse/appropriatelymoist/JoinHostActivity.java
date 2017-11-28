@@ -7,12 +7,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import java.net.Socket;
+
 public class JoinHostActivity extends AppCompatActivity {
     private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+/*        if(!SocketManager.getManageSocket().isConncted()) {
+            double[] latlong = UserInfo.getUserInfo().getLatLong();
+            SocketManager.getManageSocket().connectSocket();
+            SocketManager.getManageSocket().loginRequest(UserInfo.getUserInfo().getUserName(), latlong[0], latlong[1]);
+            System.out.println("IS NOT CONNCECTED AND RECONNECT");
+        }*/
         setContentView(R.layout.activity_join_host);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -23,6 +31,7 @@ public class JoinHostActivity extends AppCompatActivity {
 
     //click handler for the 'join' button
     public void join(View view) {
+
         Intent startNewActivity = new Intent(this, JoinActivity.class);
         startActivity(startNewActivity);
     }
