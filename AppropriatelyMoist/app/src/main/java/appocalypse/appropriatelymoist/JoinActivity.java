@@ -52,7 +52,6 @@ public class JoinActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    //NEED TO BE MODIFIED
                     final String[] data = ((String) args[0]).split("/");
 
                     View.OnClickListener vlistener = new View.OnClickListener() {
@@ -63,7 +62,6 @@ public class JoinActivity extends AppCompatActivity {
                     System.out.println("data: "+((String) args[0]));
                     Room newRoom = new Room(data[1], data[2], data[0], data[3], vlistener);
                     rooms.add(newRoom);
-                    //mAdapter.notifyItemInserted(rooms.size() - 1);
                     mAdapter.notifyDataSetChanged();
                 }
             });
