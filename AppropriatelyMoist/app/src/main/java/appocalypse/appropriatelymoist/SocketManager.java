@@ -42,6 +42,8 @@ public class SocketManager {
         mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.connect();
 
+
+
         return true;
     }
 
@@ -111,6 +113,20 @@ public class SocketManager {
         return true;
     }
 
+    public boolean isConncted(){
+        if (mSocket == null) {
+            return false;
+        }
+        return(true);
+    }
+
+    public boolean exitRoom(){
+        if (mSocket == null) return false;
+
+        mSocket.emit("exitRoom", "1");
+        return true;
+    }
+
     private Emitter.Listener onConnect = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
@@ -127,5 +143,7 @@ public class SocketManager {
             mSocket = null;
         }
     };
+
+
 
 }

@@ -30,10 +30,14 @@ public class MessageRoomActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        double[] latlong = UserInfo.getUserInfo().getLatLong();
-        SocketManager.getManageSocket().disconnectSocket();
-        SocketManager.getManageSocket().connectSocket(); //this disconn/reconn seems to cause issues sometimes
-        SocketManager.getManageSocket().loginRequest(UserInfo.getUserInfo().getUserName(), latlong[0], latlong[1]);
+        //double[] latlong = UserInfo.getUserInfo().getLatLong();
+        //SocketManager.getManageSocket().disconnectSocket();
+        //SocketManager.getManageSocket().connectSocket(); //this disconn/reconn seems to cause issues sometimes
+
+        //SocketManager.getManageSocket().existRoom();
+        //SocketManager.getManageSocket().loginRequest(UserInfo.getUserInfo().getUserName(), latlong[0], latlong[1]);
+        System.out.println("BackPRESSED MESSAAGEROOMACT");
+        SocketManager.getManageSocket().exitRoom();
         Intent startNewActivity = new Intent(this, JoinHostActivity.class);
         startActivity(startNewActivity);
     }

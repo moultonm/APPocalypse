@@ -60,10 +60,11 @@ public class JoinActivity extends AppCompatActivity {
                             openChatRoom(v, data[0]);
                         }
                     };
-
-                    Room newRoom = new Room(data[2], data[1], data[0], data[3], vlistener);
+                    System.out.println("data: "+((String) args[0]));
+                    Room newRoom = new Room(data[1], data[2], data[0], data[3], vlistener);
                     rooms.add(newRoom);
-                    mAdapter.notifyItemInserted(rooms.size() - 1);
+                    //mAdapter.notifyItemInserted(rooms.size() - 1);
+                    mAdapter.notifyDataSetChanged();
                 }
             });
         }

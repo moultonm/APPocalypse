@@ -1,6 +1,7 @@
 package appocalypse.appropriatelymoist;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -72,7 +73,7 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
         Room room = mRooms.get(position);
 
         TextView roomName = viewHolder.roomName;
-        roomName.setText(room.getRoomId() + "  " + room.getRoomName());
+        roomName.setText("  " + room.getRoomName());
 
         TextView hostName = viewHolder.hostName;
         hostName.setText("Host: " + room.getHostName());
@@ -80,8 +81,11 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
         Button joinBtn = viewHolder.roomButton;
         joinBtn.setTag(room.getRoomId());
         joinBtn.setOnClickListener(room.setJoinBtnListner());
+        System.out.println("room.getClickable: " + room.getClickable());
         if (room.getClickable().equals("n")) { //disable this room if it's too far
             joinBtn.setClickable(false);
+            joinBtn.setBackgroundColor(Color.parseColor("#f45f42"));
+
         }
     }
 
