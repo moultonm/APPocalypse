@@ -11,8 +11,10 @@ public class Room {
     private String hostName;
     private String roomId;
     private String clickable;
+	private float distance;
     private View.OnClickListener joinBtnPressed;
 
+	
     public Room(String rN, String hN, String id, String clk, View.OnClickListener el) {
         roomName = rN;
         hostName = hN;
@@ -35,6 +37,7 @@ public class Room {
 
     public String getClickable() { return clickable; }
 
+	
     public View.OnClickListener setJoinBtnListner() {
         return joinBtnPressed;
     }
