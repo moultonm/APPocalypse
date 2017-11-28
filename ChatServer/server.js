@@ -54,11 +54,11 @@ io.on("connection", function(socket){
 						console.log("Room distance: " + dist);
 
             //the room name and room host fields are delimited by a slash
-						if (dist > 5.0){ //tell the app to 'gray out' this room
-            	socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/n");
+						if (dist > 1.0){ //tell the app to 'gray out' this room
+            	socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/n" + "/" + dist);
 						}
 						else { //send room normally
-							socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/y");
+							socket.emit("room", activeRooms[i].num + "/" + activeRooms[i].name + "/" + activeRooms[i].host + "/y" + "/" + dist);
 						}
         }
   });
@@ -68,7 +68,21 @@ io.on("connection", function(socket){
 		console.log("joined room " + data);
 		socket.join(data); //subscribe them to that room
 		socket.room = data;
-		getRoom(data).users++;
+		getRoom(data).room.users++;
+	});
+
+	//test exit function
+	socket.on("exitRoom", function(data){
+		rm = getRoom(socket.room);
+
+		//here we make sure to delete the room if it became empty
+		if (rm){
+			io.to(socket.room).emit("message", socket.username + " disconnected.");
+			rm.room.users--;
+			if (rm.room.users == 0){
+				activeRooms.splice(rm.index, rm.index+1);
+			}
+		}
 	});
 
 	//logs a name for the current user
@@ -90,16 +104,6 @@ io.on("connection", function(socket){
 	//lets everyone know when another user disconnects
 	socket.on("disconnect", function(){
 		console.log(socket.username + " disconnected");
-		rm = getRoom(socket.room);
-
-		//here we make sure to delete the room if it became empty
-		if (rm){
-			io.to(socket.room).emit("message", socket.username + " disconnected.");
-			rm.room.users--;
-			if (rm.room.users == 0){
-				activeRooms.splice(rm.index, rm.index+1);
-			}
-		}
 	});
 
 }); //end of socket connection handling
