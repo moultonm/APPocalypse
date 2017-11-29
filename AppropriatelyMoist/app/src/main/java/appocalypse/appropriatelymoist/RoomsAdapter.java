@@ -86,7 +86,14 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsAdapter.ViewHolder> 
             joinBtn.setClickable(false);
             joinBtn.setBackgroundColor(Color.parseColor("#f45f42"));
 
+        }else if(room.getDistance() > 0.0002 && room.getDistance()< 0.001){
+            joinBtn.setBackgroundColor(Color.parseColor("#f3c267"));
+            joinBtn.setClickable(false);
+        } else{
+            joinBtn.setBackgroundColor(Color.parseColor("#67f3df"));
         }
+
+
     }
 
     // Returns the total count of items in the list

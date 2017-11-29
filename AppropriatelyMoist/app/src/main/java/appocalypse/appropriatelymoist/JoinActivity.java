@@ -59,8 +59,11 @@ public class JoinActivity extends AppCompatActivity {
                             openChatRoom(v, data[0]);
                         }
                     };
+
+
+
                     System.out.println("data: "+((String) args[0]));
-                    Room newRoom = new Room(data[1], data[2], data[0], data[3], vlistener);
+                    Room newRoom = new Room(data[1], data[2], data[0], data[3], data[4] ,vlistener);
                     rooms.add(newRoom);
                     mAdapter.notifyDataSetChanged();
                 }

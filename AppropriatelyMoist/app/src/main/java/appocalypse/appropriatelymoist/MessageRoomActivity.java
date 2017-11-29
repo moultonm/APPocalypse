@@ -28,6 +28,8 @@ public class MessageRoomActivity extends AppCompatActivity {
         SocketManager.getManageSocket().introRoomRequest();
     }
 
+
+
     @Override
     public void onBackPressed() {
         SocketManager.getManageSocket().exitRoom();
